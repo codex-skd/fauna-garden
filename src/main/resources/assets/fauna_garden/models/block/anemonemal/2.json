@@ -1,0 +1,8 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "fauna_garden:block/anemonemal/base",
+  "textures": {
+    "base":    "fauna_garden:block/anemonemal_2",
+    "overlay": "fauna_garden:block/anemonemal_2_overlay"
+  }
+}
