@@ -1,0 +1,51 @@
+{
+  "type": "fauna_garden:add_entry",
+  "conditions": [
+    {
+      "condition": "fauna_garden:config",
+      "prop": "anemonemal"
+    },
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:seagrass"
+        },
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:tall_seagrass",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:survives_explosion"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "tag": "forge:shears"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.02
+    }
+  ],
+  "entry": {
+    "type": "minecraft:item",
+    "name": "fauna_garden:anemonemal",
+    "functions": [
+      {
+        "function": "fauna_garden:random_animal",
+        "type": "anemonemal"
+      }
+    ]
+  }
+}
