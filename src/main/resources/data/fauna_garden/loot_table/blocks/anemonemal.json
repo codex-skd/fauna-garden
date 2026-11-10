@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "name": "seeds",
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "fauna_garden:anemonemal",
+              "condition": {
+                "term": {
+                  "type": "minecraft:match_block",
+                  "blocks": "fauna_garden:anemonemal",
+                  "state": {
+                    "age": "7"
+                  }
+                },
+                "type": "minecraft:inverted"
+              },
+              "modifier": [
+                {
+                  "source": "block_entity",
+                  "include": [
+                    "fauna_garden:entity"
+                  ],
+                  "type": "minecraft:copy_components"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fauna_garden:anemonemal",
+              "condition": {
+                "chance": 0.1,
+                "type": "minecraft:random_chance"
+              },
+              "modifier": [
+                {
+                  "source": "block_entity",
+                  "include": [
+                    "fauna_garden:entity"
+                  ],
+                  "type": "minecraft:copy_components"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modifier": [
+    {
+      "type": "minecraft:explosion_decay"
+    }
+  ]
+}

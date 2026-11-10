@@ -1,0 +1,7 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "fauna_garden:block/shrooms/base",
+  "textures": {
+    "crop": "fauna_garden:block/shrooms_7"
+  }
+}

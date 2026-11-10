@@ -1,0 +1,38 @@
+# Gradle
+build/
+.gradle/
+
+# Minecraft dev environment
+run/
+run-data/
+
+# IDE
+.vscode/
+.idea/
+.eclipse/
+*.iml
+*.ipr
+*.iws
+*.class
+.project
+.classpath
+.settings/
+bin/
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Temp files (investigations, prototypes, extracted JARs)
+temp/
+
+# Session libraries (not real dependencies)
+lib_ext/
+
+# Env
+.env
+*.local
+
+# Datagen cache
+src/generated/resources/.cache/
