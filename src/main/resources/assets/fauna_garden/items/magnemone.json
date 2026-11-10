@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "fauna_garden:item/magnemone",
+    "tints": [
+      { "type": "fauna_garden:entity_egg", "index": 0 },
+      { "type": "fauna_garden:entity_egg", "index": 1 }
+    ]
+  }
+}
