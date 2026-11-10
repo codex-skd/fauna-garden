@@ -1,0 +1,10 @@
+accessWidener v2 official
+
+# Allows the crop block entity to mark the preview entity as touching water so
+# fish render correctly while displayed inside the crop.
+accessible field net/minecraft/world/entity/Entity wasTouchingWater Z
+
+# The vanilla BlockEntityType constructor is public on NeoForge but private in
+# vanilla; it is needed to build the crop block entity type eagerly.
+accessible class net/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier
+accessible method net/minecraft/world/level/block/entity/BlockEntityType <init> (Lnet/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier;Ljava/util/Set;)V
