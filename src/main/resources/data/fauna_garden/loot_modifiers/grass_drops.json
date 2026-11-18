@@ -1,0 +1,102 @@
+{
+  "type": "fauna_garden:add_entry",
+  "conditions": [
+    {
+      "terms": [
+        {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:short_grass"
+        },
+        {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:fern"
+        },
+        {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:tall_grass",
+          "state": {
+            "half": "lower"
+          }
+        },
+        {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:large_fern",
+          "state": {
+            "half": "lower"
+          }
+        }
+      ],
+      "type": "minecraft:any_of"
+    },
+    {
+      "term": {
+        "predicate": {
+          "items": "#c:tools/shear"
+        },
+        "type": "minecraft:match_tool"
+      },
+      "type": "minecraft:inverted"
+    }
+  ],
+  "require_empty": true,
+  "entry": {
+    "type": "minecraft:alternatives",
+    "children": [
+      {
+        "type": "minecraft:item",
+        "name": "fauna_garden:seeds",
+        "condition": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "prop": "seeds",
+              "type": "fauna_garden:config"
+            },
+            {
+              "chance": 0.01,
+              "type": "minecraft:random_chance"
+            }
+          ]
+        },
+        "modifier": [
+          {
+            "type": "fauna_garden:random_animal",
+            "animal_type": "crops"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "fauna_garden:pollen",
+        "condition": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "prop": "pollen",
+              "type": "fauna_garden:config"
+            },
+            {
+              "chance": 0.01,
+              "type": "minecraft:random_chance"
+            }
+          ]
+        },
+        "modifier": [
+          {
+            "enchantment": "minecraft:fortune",
+            "formula": "minecraft:uniform_bonus_count",
+            "parameters": {
+              "bonusMultiplier": 2
+            },
+            "type": "minecraft:apply_bonus"
+          }
+        ]
+      }
+    ]
+  },
+  "functions": [
+    {
+      "type": "minecraft:explosion_decay"
+    }
+  ]
+}

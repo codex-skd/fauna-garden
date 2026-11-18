@@ -1,0 +1,72 @@
+{
+  "type": "fauna_garden:add_entry",
+  "conditions": [
+    {
+      "type": "minecraft:match_block",
+      "blocks": "minecraft:nether_sprouts"
+    },
+    {
+      "term": {
+        "predicate": {
+          "items": "#c:tools/shear"
+        },
+        "type": "minecraft:match_tool"
+      },
+      "type": "minecraft:inverted"
+    },
+    {
+      "type": "minecraft:survives_explosion"
+    }
+  ],
+  "entry": {
+    "type": "minecraft:alternatives",
+    "children": [
+      {
+        "type": "minecraft:item",
+        "name": "fauna_garden:spores",
+        "condition": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "prop": "shrooms",
+              "type": "fauna_garden:config"
+            },
+            {
+              "chance": 0.02,
+              "type": "minecraft:random_chance"
+            }
+          ]
+        },
+        "modifier": [
+          {
+            "type": "fauna_garden:random_animal",
+            "animal_type": "shrooms"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:item",
+        "name": "fauna_garden:magnemone",
+        "condition": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "prop": "magnemone",
+              "type": "fauna_garden:config"
+            },
+            {
+              "chance": 0.02,
+              "type": "minecraft:random_chance"
+            }
+          ]
+        },
+        "modifier": [
+          {
+            "type": "fauna_garden:random_animal",
+            "animal_type": "magnemone"
+          }
+        ]
+      }
+    ]
+  }
+}
