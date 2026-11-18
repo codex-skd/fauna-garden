@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "Simple Fauna Garden",
+
+  "block.fauna_garden.crops": "Animal Crops",
+  "item.fauna_garden.seeds": "%s Seeds",
+  "item.fauna_garden.seeds.default": "Animal Seeds",
+  "item.fauna_garden.seeds.tooltip": "Plant on grass or podzol to grow the animal",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "%s Seeds",
+  "item.fauna_garden.anemonemal.default": "Anemonemal Seeds",
+  "item.fauna_garden.anemonemal.tooltip": "Plant underwater to grow the animal",
+
+  "block.fauna_garden.shrooms": "Animal Shrooms",
+  "item.fauna_garden.spores": "%s Spores",
+  "item.fauna_garden.spores.default": "Animal Spores",
+  "item.fauna_garden.spores.tooltip": "Plant on nether soil to grow the animal",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "%s Spores",
+  "item.fauna_garden.magnemone.default": "Magnemones Spores",
+  "item.fauna_garden.magnemone.tooltip": "Plant under lava to grow the animal",
+
+  "item.fauna_garden.pollen": "Animal Pollen",
+  "item.fauna_garden.pollen.tooltip": "Use on animals to create animal seeds",
+  "item.fauna_garden.pollen.invalid": "No seeds available for %s",
+
+  "item.fauna_garden.fertilizer": "Animal Fertilizer",
+  "item.fauna_garden.fertilizer.tooltip": "Speeds up the growth of animal crops"
+}
