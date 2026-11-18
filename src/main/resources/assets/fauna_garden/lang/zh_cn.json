@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "简易 Fauna Garden",
+
+  "block.fauna_garden.crops": "动物作物",
+  "item.fauna_garden.seeds": "%s种子",
+  "item.fauna_garden.seeds.default": "动物种子",
+  "item.fauna_garden.seeds.tooltip": "种植在草方块或灰化土上以培育动物",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "%s种子",
+  "item.fauna_garden.anemonemal.default": "Anemonemal种子",
+  "item.fauna_garden.anemonemal.tooltip": "种植在水下以培育动物",
+
+  "block.fauna_garden.shrooms": "动物菌菇",
+  "item.fauna_garden.spores": "%s孢子",
+  "item.fauna_garden.spores.default": "动物孢子",
+  "item.fauna_garden.spores.tooltip": "种植在下界土壤上以培育动物",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "%s孢子",
+  "item.fauna_garden.magnemone.default": "Magnemones孢子",
+  "item.fauna_garden.magnemone.tooltip": "种植在熔岩下以培育动物",
+
+  "item.fauna_garden.pollen": "动物花粉",
+  "item.fauna_garden.pollen.tooltip": "对动物使用以制作动物种子",
+  "item.fauna_garden.pollen.invalid": "没有可用于%s的种子",
+
+  "item.fauna_garden.fertilizer": "动物肥料",
+  "item.fauna_garden.fertilizer.tooltip": "加速动物作物的生长"
+}

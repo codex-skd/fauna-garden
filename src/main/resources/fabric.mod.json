@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fauna_garden",
+  "version": "${version}",
+  "name": "Fauna Garden",
+  "description": "Grows baby animals from crops, a port of Animal Crops to Minecraft 26.2.",
+  "authors": [
+    "KnightMiner (original Animal Crops)",
+    "Stalking Dragons"
+  ],
+  "contact": {
+    "issues": "https://gitlab.com/stalking-dragons/minecraft/fauna-garden/-/issues"
+  },
+  "license": "MIT",
+  "icon": "fauna_garden.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.skd.faunagarden.FaunaGarden"
+    ],
+    "client": [
+      "com.skd.faunagarden.client.FaunaGardenClient"
+    ]
+  },
+  "accessWidener": "fauna_garden.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "credits": "Port of Animal Crops (MIT), see LICENSE and NOTICE for attribution"
+  },
+  "suggests": {
+    "jei": "*"
+  }
+}

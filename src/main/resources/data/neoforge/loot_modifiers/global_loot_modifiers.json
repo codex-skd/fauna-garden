@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "fauna_garden:grass_drops",
+    "fauna_garden:sea_grass_drops",
+    "fauna_garden:nether_grass_drops"
+  ]
+}
