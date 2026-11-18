@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "Упрощённый Fauna Garden",
+
+  "block.fauna_garden.crops": "Животные культуры",
+  "item.fauna_garden.seeds": "Семена (%s)",
+  "item.fauna_garden.seeds.default": "Семена животных",
+  "item.fauna_garden.seeds.tooltip": "Посадите на траву или подзол, чтобы вырастить животное",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "Семена (%s)",
+  "item.fauna_garden.anemonemal.default": "Семена Anemonemal",
+  "item.fauna_garden.anemonemal.tooltip": "Посадите под водой, чтобы вырастить животное",
+
+  "block.fauna_garden.shrooms": "Животные грибы",
+  "item.fauna_garden.spores": "Споры (%s)",
+  "item.fauna_garden.spores.default": "Споры животных",
+  "item.fauna_garden.spores.tooltip": "Посадите на почву Незера, чтобы вырастить животное",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "Споры (%s)",
+  "item.fauna_garden.magnemone.default": "Споры Magnemones",
+  "item.fauna_garden.magnemone.tooltip": "Посадите под лавой, чтобы вырастить животное",
+
+  "item.fauna_garden.pollen": "Пыльца животных",
+  "item.fauna_garden.pollen.tooltip": "Используйте на животных, чтобы создать семена животных",
+  "item.fauna_garden.pollen.invalid": "Нет доступных семян для %s",
+
+  "item.fauna_garden.fertilizer": "Удобрение для животных",
+  "item.fauna_garden.fertilizer.tooltip": "Ускоряет рост животных культур"
+}

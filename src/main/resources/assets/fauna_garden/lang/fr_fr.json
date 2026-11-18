@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "Fauna Garden simplifié",
+
+  "block.fauna_garden.crops": "Cultures animales",
+  "item.fauna_garden.seeds": "Graines de %s",
+  "item.fauna_garden.seeds.default": "Graines animales",
+  "item.fauna_garden.seeds.tooltip": "Plantez sur de l'herbe ou du podzol pour faire pousser l'animal",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "Graines de %s",
+  "item.fauna_garden.anemonemal.default": "Graines d'Anemonemal",
+  "item.fauna_garden.anemonemal.tooltip": "Plantez sous l'eau pour faire pousser l'animal",
+
+  "block.fauna_garden.shrooms": "Champignons animaux",
+  "item.fauna_garden.spores": "Spores de %s",
+  "item.fauna_garden.spores.default": "Spores animales",
+  "item.fauna_garden.spores.tooltip": "Plantez sur un sol du Nether pour faire pousser l'animal",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "Spores de %s",
+  "item.fauna_garden.magnemone.default": "Spores de Magnemones",
+  "item.fauna_garden.magnemone.tooltip": "Plantez sous la lave pour faire pousser l'animal",
+
+  "item.fauna_garden.pollen": "Pollen animal",
+  "item.fauna_garden.pollen.tooltip": "Utilisez sur les animaux pour créer des graines animales",
+  "item.fauna_garden.pollen.invalid": "Aucune graine disponible pour %s",
+
+  "item.fauna_garden.fertilizer": "Engrais animal",
+  "item.fauna_garden.fertilizer.tooltip": "Accélère la croissance des cultures animales"
+}

@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "Einfaches Fauna Garden",
+
+  "block.fauna_garden.crops": "Tierpflanzen",
+  "item.fauna_garden.seeds": "%s-Samen",
+  "item.fauna_garden.seeds.default": "Tiersamen",
+  "item.fauna_garden.seeds.tooltip": "Auf Gras oder Podsol pflanzen, um das Tier wachsen zu lassen",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "%s-Samen",
+  "item.fauna_garden.anemonemal.default": "Anemonemal-Samen",
+  "item.fauna_garden.anemonemal.tooltip": "Unter Wasser pflanzen, um das Tier wachsen zu lassen",
+
+  "block.fauna_garden.shrooms": "Tierpilze",
+  "item.fauna_garden.spores": "%s-Sporen",
+  "item.fauna_garden.spores.default": "Tiersporen",
+  "item.fauna_garden.spores.tooltip": "Auf Netherboden pflanzen, um das Tier wachsen zu lassen",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "%s-Sporen",
+  "item.fauna_garden.magnemone.default": "Magnemones-Sporen",
+  "item.fauna_garden.magnemone.tooltip": "Unter Lava pflanzen, um das Tier wachsen zu lassen",
+
+  "item.fauna_garden.pollen": "Tierpollen",
+  "item.fauna_garden.pollen.tooltip": "Auf Tiere anwenden, um Tiersamen zu erzeugen",
+  "item.fauna_garden.pollen.invalid": "Keine Samen für %s verfügbar",
+
+  "item.fauna_garden.fertilizer": "Tierdünger",
+  "item.fauna_garden.fertilizer.tooltip": "Beschleunigt das Wachstum von Tierpflanzen"
+}
