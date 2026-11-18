@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "심플 Fauna Garden",
+
+  "block.fauna_garden.crops": "동물 작물",
+  "item.fauna_garden.seeds": "%s 씨앗",
+  "item.fauna_garden.seeds.default": "동물 씨앗",
+  "item.fauna_garden.seeds.tooltip": "잔디 블록이나 회백토에 심으면 동물이 자랍니다",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "%s 씨앗",
+  "item.fauna_garden.anemonemal.default": "Anemonemal 씨앗",
+  "item.fauna_garden.anemonemal.tooltip": "물속에 심으면 동물이 자랍니다",
+
+  "block.fauna_garden.shrooms": "동물 버섯",
+  "item.fauna_garden.spores": "%s 포자",
+  "item.fauna_garden.spores.default": "동물 포자",
+  "item.fauna_garden.spores.tooltip": "네더 흙에 심으면 동물이 자랍니다",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "%s 포자",
+  "item.fauna_garden.magnemone.default": "Magnemones 포자",
+  "item.fauna_garden.magnemone.tooltip": "용암 아래에 심으면 동물이 자랍니다",
+
+  "item.fauna_garden.pollen": "동물 꽃가루",
+  "item.fauna_garden.pollen.tooltip": "동물에게 사용하면 동물 씨앗을 만들 수 있습니다",
+  "item.fauna_garden.pollen.invalid": "%s에 사용할 수 있는 씨앗이 없습니다",
+
+  "item.fauna_garden.fertilizer": "동물 비료",
+  "item.fauna_garden.fertilizer.tooltip": "동물 작물의 성장을 가속합니다"
+}

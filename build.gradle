@@ -1,0 +1,120 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.mod_group_id
+
+base {
+    archivesName = "${archives_base_name}-${minecraft_version}-fabric-${loader_version}"
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/fauna_garden.accesswidener")
+
+    mods {
+        "fauna_garden" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+sourceSets.main.resources {
+    // Generated tag JSONs are shipped as static resources (datagen is not ported).
+    srcDir 'src/generated/resources'
+
+    // Exclude common development only resources from finalized outputs.
+    exclude '**/*.bbmodel'            // BlockBench project files
+    exclude '.cache'                  // datagen cache files
+    exclude '**/.cache/**'            // datagen cache files
+    exclude 'templates/**'            // NeoForge mod metadata template
+    // NeoForge/Forge metadata and global loot modifier list are obsolete on Fabric.
+    // Keep the files in the tree (nothing is deleted) but never ship them.
+    exclude 'META-INF/mods.toml'
+    exclude 'META-INF/neoforge.mods.toml'
+    exclude 'META-INF/accesstransformer.cfg'
+    exclude 'data/forge/**'
+    exclude 'data/neoforge/**'
+    exclude 'data/fauna_garden/loot_modifiers/**'
+}
+
+sourceSets.main.java {
+    // NeoForge data generators, the Forge/NeoForge global loot modifier implementation
+    // and the NeoForge GameTests are obsolete on Fabric. The files stay in the tree but
+    // are not compiled.
+    exclude 'com/skd/faunagarden/datagen/**'
+    exclude 'com/skd/faunagarden/json/AddEntryLootModifier.java'
+    exclude 'com/skd/faunagarden/gametest/**'
+}
+
+repositories {
+    // JEI is optional and resolved from its own maven.
+    maven {
+        url = 'https://maven.blamejared.com/'
+        content {
+            includeGroup 'mezz.jei'
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // JEI is optional: compile-only, never bundled in the mod jar. The full JEI jar
+    // already contains the API classes and its own libraries, so it is used
+    // non-transitively.
+    compileOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}") { transitive = false }
+    localRuntime("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}") { transitive = false }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 25
+    it.options.encoding = 'UTF-8'
+}
+
+java {
+    withSourcesJar()
+
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+}
+
+tasks.withType(Jar).configureEach {
+    manifest {
+        attributes([
+                'Specification-Title'     : mod_id,
+                'Specification-Vendor'    : mod_authors,
+                'Specification-Version'   : project.version,
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : mod_authors,
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+        ])
+    }
+}
+
+publishing {
+    publications {
+        create("mavenJava", MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
+        }
+    }
+}
