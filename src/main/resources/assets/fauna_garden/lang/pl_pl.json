@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "Prosty Fauna Garden",
+
+  "block.fauna_garden.crops": "Zwierzęce uprawy",
+  "item.fauna_garden.seeds": "Nasiona: %s",
+  "item.fauna_garden.seeds.default": "Nasiona zwierząt",
+  "item.fauna_garden.seeds.tooltip": "Posadź na trawie lub bielicy, aby wyhodować zwierzę",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "Nasiona: %s",
+  "item.fauna_garden.anemonemal.default": "Nasiona Anemonemal",
+  "item.fauna_garden.anemonemal.tooltip": "Posadź pod wodą, aby wyhodować zwierzę",
+
+  "block.fauna_garden.shrooms": "Zwierzęce grzyby",
+  "item.fauna_garden.spores": "Zarodniki: %s",
+  "item.fauna_garden.spores.default": "Zarodniki zwierząt",
+  "item.fauna_garden.spores.tooltip": "Posadź na glebie Netheru, aby wyhodować zwierzę",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "Zarodniki: %s",
+  "item.fauna_garden.magnemone.default": "Zarodniki Magnemones",
+  "item.fauna_garden.magnemone.tooltip": "Posadź pod lawą, aby wyhodować zwierzę",
+
+  "item.fauna_garden.pollen": "Zwierzęcy pyłek",
+  "item.fauna_garden.pollen.tooltip": "Użyj na zwierzętach, aby stworzyć nasiona zwierząt",
+  "item.fauna_garden.pollen.invalid": "Brak dostępnych nasion dla: %s",
+
+  "item.fauna_garden.fertilizer": "Zwierzęcy nawóz",
+  "item.fauna_garden.fertilizer.tooltip": "Przyspiesza wzrost zwierzęcych upraw"
+}
