@@ -1,0 +1,32 @@
+{
+  "itemGroup.fauna_garden": "Fauna Garden",
+
+  "resourcePack.fauna_garden.simple_crops": "シンプルな Fauna Garden",
+
+  "block.fauna_garden.crops": "動物の作物",
+  "item.fauna_garden.seeds": "%sの種",
+  "item.fauna_garden.seeds.default": "動物の種",
+  "item.fauna_garden.seeds.tooltip": "草ブロックまたはポドゾルに植えると動物が育つ",
+
+  "block.fauna_garden.anemonemal": "Anemonemal",
+  "item.fauna_garden.anemonemal": "%sの種",
+  "item.fauna_garden.anemonemal.default": "Anemonemalの種",
+  "item.fauna_garden.anemonemal.tooltip": "水中に植えると動物が育つ",
+
+  "block.fauna_garden.shrooms": "動物のキノコ",
+  "item.fauna_garden.spores": "%sの胞子",
+  "item.fauna_garden.spores.default": "動物の胞子",
+  "item.fauna_garden.spores.tooltip": "ネザーの土に植えると動物が育つ",
+
+  "block.fauna_garden.magnemone": "Magnemones",
+  "item.fauna_garden.magnemone": "%sの胞子",
+  "item.fauna_garden.magnemone.default": "Magnemonesの胞子",
+  "item.fauna_garden.magnemone.tooltip": "溶岩の下に植えると動物が育つ",
+
+  "item.fauna_garden.pollen": "動物の花粉",
+  "item.fauna_garden.pollen.tooltip": "動物に使うと動物の種を作れる",
+  "item.fauna_garden.pollen.invalid": "%sに対応する種はありません",
+
+  "item.fauna_garden.fertilizer": "動物の肥料",
+  "item.fauna_garden.fertilizer.tooltip": "動物の作物の成長を早める"
+}

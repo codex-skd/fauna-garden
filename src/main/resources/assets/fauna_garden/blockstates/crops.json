@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "fauna_garden:block/crops/0" },
+    "age=1": { "model": "fauna_garden:block/crops/1" },
+    "age=2": { "model": "fauna_garden:block/crops/2" },
+    "age=3": { "model": "fauna_garden:block/crops/3" },
+    "age=4": { "model": "fauna_garden:block/crops/4" },
+    "age=5": { "model": "fauna_garden:block/crops/5" },
+    "age=6": { "model": "fauna_garden:block/crops/6" },
+    "age=7": { "model": "fauna_garden:block/crops/7" }
+  }
+}
