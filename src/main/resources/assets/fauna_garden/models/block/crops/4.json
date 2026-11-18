@@ -1,0 +1,7 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fauna_garden:block/crops_4"
+  }
+}
